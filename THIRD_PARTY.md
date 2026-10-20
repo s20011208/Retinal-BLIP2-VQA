@@ -35,7 +35,7 @@ Dependencies are installed separately and retain their own license files. No pac
 | Matplotlib | Matplotlib/PSF-based license | [Matplotlib](https://github.com/matplotlib/matplotlib) |
 | PyYAML | MIT | [PyYAML](https://github.com/yaml/pyyaml) |
 
-The public model wrapper calls the installed Transformers API; it does not redistribute the Transformers implementation or pretrained model internals. Diagrams are original schematic artwork; scientific plots are generated from the released aggregate result files and contain no retinal photographs.
+The public model wrapper calls the installed Transformers API; it does not redistribute the Transformers implementation or pretrained model internals. Diagrams are original schematic artwork; scientific plots are generated from the released aggregate result files and contain no retinal photographs. The Method diagrams redraw the Q-Former and decoder-based architecture described in [BLIP-2, Figs. 2–3](https://proceedings.mlr.press/v202/li23q/li23q.pdf) (Li et al., ICML 2023); the tensor sizes, trainability and answer supervision follow this project’s inspected OPT-2.7B implementation.
 
 ## Research references
 

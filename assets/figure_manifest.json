@@ -16,20 +16,20 @@
       "bytes": 16995
     },
     "method-mobile.png": {
-      "sha256": "bb18c068560459b70a64006e77c86b4db4550987bf245f6f41f42b8b0e42efba",
-      "bytes": 169300
+      "sha256": "e21e086dcdcd20d053cc1900d7b4961a512df8968027e0b81cd4098e82871123",
+      "bytes": 565112
     },
     "method-mobile.svg": {
-      "sha256": "f9ea3079058e194865ce9d885cb10d4d07b81ab17d6939ee2bea4e3e5c0f9d30",
-      "bytes": 9717
+      "sha256": "ec3029e325768ad41da54c691c78d391bb3ba6388fc1a0ca426e6a9dc1b17b25",
+      "bytes": 39920
     },
     "method.png": {
-      "sha256": "8dfba4567f060026e4f2a1922431b9f0004bde247737dae7ee22cd910dc9fbdd",
-      "bytes": 183709
+      "sha256": "fbe66ab8904b6d07f6fc7cabcca34fe20525e2de5f3a03ea45886dca3fda4f4c",
+      "bytes": 588174
     },
     "method.svg": {
-      "sha256": "731a8fbc54565d94d2fc75808ef9f570fe2cfcbd1d6bb51cde6b5f236f7ea24c",
-      "bytes": 12141
+      "sha256": "e62f70882b02a38fb67f0e89437101e6d08c9d0c1bace1d1db1245edf4a16708",
+      "bytes": 51556
     },
     "results-mobile.png": {
       "sha256": "9e804302075ace0fb4accde11a15c615c090c40ff141da4301e7cafdfc7bf515",
@@ -47,5 +47,17 @@
       "sha256": "6a65df1d8fb2b1c3d221b6caef0054ab2f098ab58f2874a8e240521d9bf7da72",
       "bytes": 12055
     }
+  },
+  "architecture_reference": {
+    "paper": "BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models",
+    "url": "https://proceedings.mlr.press/v202/li23q/li23q.pdf",
+    "figures": [
+      "Figure 2: query-transformer structure",
+      "Figure 3 (top): decoder-only OPT path"
+    ],
+    "drawing": "Original editable-vector redraw for this retinal adaptation; no paper pixels or retinal images reproduced.",
+    "checkpoint": "Salesforce/blip2-opt-2.7b",
+    "revision": "59a1ef6c1e5117b3f65523d1c6066825bcf315e3",
+    "scope": "Actual Q-Former/projection downstream adaptation and answer-only loss; paper pretraining objectives omitted."
   }
 }

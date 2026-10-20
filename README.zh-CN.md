@@ -36,6 +36,8 @@
   </picture>
 </p>
 
+*基于 [BLIP-2 论文图 2–3](https://proceedings.mlr.press/v202/li23q/li23q.pdf) 的 Q-Former 与解码器结构重新绘制，展开本项目的适配位置和答案监督。[查看高清矢量图 →](assets/method.svg)*
+
 | 模型 | 训练哪些部分 | 作用 |
 | :--- | :--- | :--- |
 | **B0** | 不训练 | 原始 BLIP-2 基线 |

@@ -36,6 +36,8 @@ This project adapts **BLIP-2** while freezing its visual encoder and language mo
   </picture>
 </p>
 
+*Original schematic based on the Q-Former and decoder-based architecture in [BLIP-2, Figs. 2–3](https://proceedings.mlr.press/v202/li23q/li23q.pdf), expanded for this project’s adaptation and answer supervision. [View full-resolution vector →](assets/method.svg)*
+
 | Model | What is trained | Role |
 | :--- | :--- | :--- |
 | **B0** | Nothing | Pretrained BLIP-2 baseline |

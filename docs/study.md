@@ -26,6 +26,16 @@ The image encoder and language-model **parameters** remain frozen. The frozen la
 
 Training supervises answer tokens only; question/prefix/padding tokens do not contribute to the answer loss. Evaluation scores a fixed candidate set by answer-token conditional likelihood. These results describe closed-answer scoring, not unrestricted clinical text generation.
 
+### Reading the method diagram
+
+The [method schematic](../assets/method.svg) is an original redrawing based on the Q-Former detail and decoder-based language-model path in [BLIP-2, Figures 2–3](https://proceedings.mlr.press/v202/li23q/li23q.pdf). It describes the **M1 adaptation configuration**, with B0 and B1 distinguished by their trainable components.
+
+For the inspected OPT-2.7B checkpoint, a 224 × 224 RGB input produces 257 visual tokens of width 1,408. A set of 32 learned queries of width 768 passes through the 12-block Q-Former. Query self-attention and feed-forward layers run in each block; six cross-attention layers read the frozen visual features, once every two blocks. A linear projection maps each query output from 768 to 2,560 dimensions, giving 32 visual prefix tokens in OPT's embedding space.
+
+The question prompt enters the OPT text-embedding path directly. The projected visual tokens and text embeddings condition the frozen causal decoder. During training, teacher forcing supplies preceding reference-answer tokens; only answer tokens and the answer-ending token contribute to the loss. Question, visual-prefix and padding positions are masked. The loss retains gradients through OPT's operations to the projection and Q-Former while OPT's own parameters stay frozen. The frozen image encoder receives no parameter updates.
+
+Evaluation uses the same fixed candidate answers and summed answer-token log likelihood, including the answer-ending token. This is the retinal adaptation path; the BLIP-2 paper's first-stage contrastive and matching objectives are not additional objectives in this study. Token grids in the diagram are schematic illustrations, not measured lesion maps.
+
 ## Two cohorts, two endpoints
 
 | | Original VQA study | Lesion-presence follow-up |
