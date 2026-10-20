@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite the repository and the original BLIP-2 and dataset publications when using this research."
+type: software
+license: MIT
+title: "Retinal BLIP-2 VQA: adaptation and audited lesion-presence evaluation"
+version: 0.1.0
+date-released: 2026-10-20
+authors:
+  - name: "s20011208"
+    website: "https://github.com/s20011208"
+repository-code: "https://github.com/s20011208/Retinal-BLIP2-VQA"
+url: "https://github.com/s20011208/Retinal-BLIP2-VQA"
+abstract: "A public research-code release for closed-answer retinal visual question answering with BLIP-2 adapter training and a separate four-lesion presence evaluation. Aggregate results are bound to audited source-artifact fingerprints."
+keywords:
+  - visual-question-answering
+  - retinal-imaging
+  - blip-2
+  - parameter-efficient-adaptation
+  - reproducible-research

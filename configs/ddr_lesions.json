@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "question_type_to_lesion": {
+    "lesion_EX": "EX",
+    "lesion_HE": "HE",
+    "lesion_MA": "MA",
+    "lesion_SE": "SE"
+  },
+  "questions": {
+    "lesion_EX": "Are hard exudates present in this retinal fundus photograph? Answer yes or no.",
+    "lesion_HE": "Are hemorrhages present in this retinal fundus photograph? Answer yes or no.",
+    "lesion_MA": "Are microaneurysms present in this retinal fundus photograph? Answer yes or no.",
+    "lesion_SE": "Are soft exudates present in this retinal fundus photograph? Answer yes or no."
+  },
+  "answer_candidates": [
+    "no",
+    "yes"
+  ],
+  "scope": "Whole-image reference presence of four annotated DDR lesion channels; no localization or clinical reasoning claim."
+}

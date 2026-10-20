@@ -1,0 +1,10 @@
+# Direct runtime versions in the verified P1 environment; CUDA wheels depend on your platform.
+torch==2.4.1
+transformers==4.46.3
+accelerate==0.34.2
+numpy==1.24.4
+Pillow==10.4.0
+PyYAML==6.0.2
+tokenizers==0.20.3
+safetensors==0.5.3
+pytest==8.3.5

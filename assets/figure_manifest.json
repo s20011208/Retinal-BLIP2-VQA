@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "scientific_chart_source": {
+    "file": "results/main_results.json",
+    "sha256": "5399b5b3934bb11564428ec71afb0913b91d2cbc2085b9d7be7dd39df7fd76ba"
+  },
+  "artwork": "Abstract tokens and architecture; no medical images or inferred lesion maps.",
+  "script": "tools/build_figures.py",
+  "files": {
+    "banner.png": {
+      "sha256": "74ef64c77d43fc20e73cef46e6460196a19887e47f7ebd72cac6e23b57cdf73a",
+      "bytes": 121868
+    },
+    "banner.svg": {
+      "sha256": "73a236f3283d71d1a4d5818c25050365d0c083a1098109bc4d1d02533a96036a",
+      "bytes": 16995
+    },
+    "method-mobile.png": {
+      "sha256": "bb18c068560459b70a64006e77c86b4db4550987bf245f6f41f42b8b0e42efba",
+      "bytes": 169300
+    },
+    "method-mobile.svg": {
+      "sha256": "f9ea3079058e194865ce9d885cb10d4d07b81ab17d6939ee2bea4e3e5c0f9d30",
+      "bytes": 9717
+    },
+    "method.png": {
+      "sha256": "8dfba4567f060026e4f2a1922431b9f0004bde247737dae7ee22cd910dc9fbdd",
+      "bytes": 183709
+    },
+    "method.svg": {
+      "sha256": "731a8fbc54565d94d2fc75808ef9f570fe2cfcbd1d6bb51cde6b5f236f7ea24c",
+      "bytes": 12141
+    },
+    "results-mobile.png": {
+      "sha256": "9e804302075ace0fb4accde11a15c615c090c40ff141da4301e7cafdfc7bf515",
+      "bytes": 197943
+    },
+    "results-mobile.svg": {
+      "sha256": "01bf14c10ac3c54794e2ec069f439b8339243d314a079cd4650fc7b0d082ebdb",
+      "bytes": 11072
+    },
+    "results.png": {
+      "sha256": "04a4ed1e516f2a518cf8728b575251557205ae02c400ae9474647839ef18b12f",
+      "bytes": 253866
+    },
+    "results.svg": {
+      "sha256": "6a65df1d8fb2b1c3d221b6caef0054ab2f098ab58f2874a8e240521d9bf7da72",
+      "bytes": 12055
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "identities": "${RETINAL_DATA_ROOT}/identities.jsonl",
+  "answers": "${RETINAL_DATA_ROOT}/qa.jsonl",
+  "data_root": "${RETINAL_DATA_ROOT}",
+  "model_path": "${RETINAL_MODEL_PATH}",
+  "model_revision": "59a1ef6c1e5117b3f65523d1c6066825bcf315e3",
+  "output_dir": "${RETINAL_OUTPUT_ROOT}/M1_b100_s17",
+  "mode": "M1",
+  "device": "cuda",
+  "seed": 17,
+  "budget": 1.0,
+  "learning_rate": 0.00003,
+  "weight_decay": 0.01,
+  "clip_norm": 1.0,
+  "effective_batch": 16,
+  "max_epochs": 20,
+  "patience": 4,
+  "timeout_seconds": 10800,
+  "checkpoint_interval": 10
+}

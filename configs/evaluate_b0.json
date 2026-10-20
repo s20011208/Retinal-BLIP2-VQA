@@ -1,0 +1,12 @@
+{
+  "identities": "${RETINAL_DATA_ROOT}/identities.jsonl",
+  "answers": "${RETINAL_DATA_ROOT}/qa.jsonl",
+  "data_root": "${RETINAL_DATA_ROOT}",
+  "model_path": "${RETINAL_MODEL_PATH}",
+  "model_revision": "59a1ef6c1e5117b3f65523d1c6066825bcf315e3",
+  "output": "${RETINAL_OUTPUT_ROOT}/B0_val.jsonl",
+  "mode": "B0",
+  "device": "cuda",
+  "roles": ["val"],
+  "free_generation": true
+}

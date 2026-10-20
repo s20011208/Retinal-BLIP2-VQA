@@ -1,0 +1,105 @@
+{
+  "status": "PASS_SELECTED_AGGREGATE_EXPORT_CHECKS",
+  "role": "Public-release aggregation review; distinct from original independent experimental reviews.",
+  "checks": [
+    {
+      "check": "vqa_mean_and_seeds_B0",
+      "status": "PASS"
+    },
+    {
+      "check": "vqa_mean_and_seeds_B1",
+      "status": "PASS"
+    },
+    {
+      "check": "vqa_mean_and_seeds_simple_vision",
+      "status": "PASS"
+    },
+    {
+      "check": "vqa_mean_and_seeds_M1",
+      "status": "PASS"
+    },
+    {
+      "check": "independent_confusion_recompute_B0",
+      "status": "PASS",
+      "image_rows": 225,
+      "lesions": 4
+    },
+    {
+      "check": "independent_confusion_recompute_B1_s17",
+      "status": "PASS",
+      "image_rows": 225,
+      "lesions": 4
+    },
+    {
+      "check": "independent_confusion_recompute_B1_s29",
+      "status": "PASS",
+      "image_rows": 225,
+      "lesions": 4
+    },
+    {
+      "check": "independent_confusion_recompute_B1_s43",
+      "status": "PASS",
+      "image_rows": 225,
+      "lesions": 4
+    },
+    {
+      "check": "independent_confusion_recompute_M1_s17",
+      "status": "PASS",
+      "image_rows": 225,
+      "lesions": 4
+    },
+    {
+      "check": "independent_confusion_recompute_M1_s29",
+      "status": "PASS",
+      "image_rows": 225,
+      "lesions": 4
+    },
+    {
+      "check": "independent_confusion_recompute_M1_s43",
+      "status": "PASS",
+      "image_rows": 225,
+      "lesions": 4
+    },
+    {
+      "check": "independent_reviews_present_and_pass",
+      "status": "PASS",
+      "reviews": 6
+    }
+  ],
+  "original_reviews": {
+    "vqa_delivery_review": {
+      "status": "PASS",
+      "source_id": "vqa_delivery_review",
+      "source_sha256": "278951cc27deda840bbf5adcdedd9d3a77c9a567c5c8ced778c31be43eaa3e0b"
+    },
+    "lesion_numeric_review": {
+      "status": "PASS_INDEPENDENT_RAW_CONFIRMATION_NUMBERS",
+      "source_id": "lesion_numeric_review",
+      "source_sha256": "96830d1b28f1a0a39f449786238641a52dd315b14cca9682d25ef13f0bc5e273"
+    },
+    "lesion_rows_review": {
+      "status": "PASS_INDEPENDENT_CONFIRMATION_ROW_BINDINGS",
+      "source_id": "lesion_rows_review",
+      "source_sha256": "6956c9982b2f47cd5609a89523a2a80f102f573982eb6d6bc36194ed3a089646"
+    },
+    "lesion_reproduction_review": {
+      "status": "PASS_INDEPENDENT_REAL_CHECKPOINT_REPRODUCTION_REVIEW",
+      "source_id": "lesion_reproduction_review",
+      "source_sha256": "9f1b35a06ab63fdf4026386c56d3db0c62122ce69ff5c5715f29cf35a4583f5b"
+    },
+    "lesion_raw_reference_review": {
+      "status": "PASS",
+      "source_id": "lesion_raw_reference_review",
+      "source_sha256": "df47700a3121678113629001c08857cbbd3da2f7dd69ab11b3968a2bd771c8f8"
+    },
+    "lesion_release_review": {
+      "status": "PASS_REAL_INDEPENDENT_EVIDENCE_AGGREGATION_FOR_REPORT",
+      "source_id": "lesion_release_review",
+      "source_sha256": "c15b61e5cfc36ed5b474e69ab6ccdcf253ca540da1230061882bbd7e57c7487c"
+    }
+  },
+  "no_new_model_training": true,
+  "no_new_confirmation_evaluation": true,
+  "no_patient_data_exported": true,
+  "all_scientific_sources_are_archived_private_artifacts": true
+}

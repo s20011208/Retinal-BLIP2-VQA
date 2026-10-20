@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with matplotlib (https://matplotlib.org/) -->
+<svg height="529.92pt" version="1.1" viewBox="0 0 806.4 529.92" width="806.4pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+*{stroke-linecap:butt;stroke-linejoin:round;}
+  </style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 529.92 
+L 806.4 529.92 
+L 806.4 0 
+L 0 0 
+z
+" style="fill:#ffffff;"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path clip-path="url(#p0115503149)" d="M 16.56 0.72 
+L 789.84 0.72 
+Q 805.68 0.72 805.68 16.56 
+L 805.68 513.36 
+Q 805.68 529.2 789.84 529.2 
+L 16.56 529.2 
+Q 0.72 529.2 0.72 513.36 
+L 0.72 16.56 
+Q 0.72 0.72 16.56 0.72 
+z
+" style="fill:#ffffff;stroke:#d8e3ed;stroke-linejoin:miter;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_3">
+    <path clip-path="url(#p0115503149)" d="M 28.8 90.72 
+L 777.6 90.72 
+Q 789.12 90.72 789.12 102.24 
+L 789.12 272.88 
+Q 789.12 284.4 777.6 284.4 
+L 28.8 284.4 
+Q 17.28 284.4 17.28 272.88 
+L 17.28 102.24 
+Q 17.28 90.72 28.8 90.72 
+z
+" style="fill:#f6f9fc;stroke:#f6f9fc;stroke-linejoin:miter;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_4">
+    <path clip-path="url(#p0115503149)" d="M 95.04 193.68 
+L 525.6 193.68 
+Q 529.92 193.68 529.92 198 
+L 529.92 207.36 
+Q 529.92 211.68 525.6 211.68 
+L 95.04 211.68 
+Q 90.72 211.68 90.72 207.36 
+L 90.72 198 
+Q 90.72 193.68 95.04 193.68 
+z
+" style="fill:#eaf0f7;stroke:#eaf0f7;stroke-linejoin:miter;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_5">
+    <path clip-path="url(#p0115503149)" d="M 95.04 193.68 
+L 420.375 193.68 
+Q 424.695 193.68 424.695 198 
+L 424.695 207.36 
+Q 424.695 211.68 420.375 211.68 
+L 95.04 211.68 
+Q 90.72 211.68 90.72 207.36 
+L 90.72 198 
+Q 90.72 193.68 95.04 193.68 
+z
+" style="fill:#53677c;stroke:#53677c;stroke-linejoin:miter;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_6">
+    <path clip-path="url(#p0115503149)" d="M 95.04 226.08 
+L 525.6 226.08 
+Q 529.92 226.08 529.92 230.4 
+L 529.92 239.76 
+Q 529.92 244.08 525.6 244.08 
+L 95.04 244.08 
+Q 90.72 244.08 90.72 239.76 
+L 90.72 230.4 
+Q 90.72 226.08 95.04 226.08 
+z
+" style="fill:#eaf0f7;stroke:#eaf0f7;stroke-linejoin:miter;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_7">
+    <path clip-path="url(#p0115503149)" d="M 95.04 226.08 
+L 452.4 226.08 
+Q 456.72 226.08 456.72 230.4 
+L 456.72 239.76 
+Q 456.72 244.08 452.4 244.08 
+L 95.04 244.08 
+Q 90.72 244.08 90.72 239.76 
+L 90.72 230.4 
+Q 90.72 226.08 95.04 226.08 
+z
+" style="fill:#00756d;stroke:#00756d;stroke-linejoin:miter;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_8">
+    <path clip-path="url(#p0115503149)" d="M 650.16 189.36 
+L 760.32 189.36 
+Q 768.96 189.36 768.96 198 
+L 768.96 249.84 
+Q 768.96 258.48 760.32 258.48 
+L 650.16 258.48 
+Q 641.52 258.48 641.52 249.84 
+L 641.52 198 
+Q 641.52 189.36 650.16 189.36 
+z
+" style="fill:#e1f4f0;stroke:#e1f4f0;stroke-linejoin:miter;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_9">
+    <path clip-path="url(#p0115503149)" d="M 28.8 301.68 
+L 777.6 301.68 
+Q 789.12 301.68 789.12 313.2 
+L 789.12 483.84 
+Q 789.12 495.36 777.6 495.36 
+L 28.8 495.36 
+Q 17.28 495.36 17.28 483.84 
+L 17.28 313.2 
+Q 17.28 301.68 28.8 301.68 
+z
+" style="fill:#f6f9fc;stroke:#f6f9fc;stroke-linejoin:miter;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_10">
+    <path clip-path="url(#p0115503149)" d="M 95.04 404.64 
+L 525.6 404.64 
+Q 529.92 404.64 529.92 408.96 
+L 529.92 418.32 
+Q 529.92 422.64 525.6 422.64 
+L 95.04 422.64 
+Q 90.72 422.64 90.72 418.32 
+L 90.72 408.96 
+Q 90.72 404.64 95.04 404.64 
+z
+" style="fill:#eaf0f7;stroke:#eaf0f7;stroke-linejoin:miter;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_11">
+    <path clip-path="url(#p0115503149)" d="M 95.04 404.64 
+L 252.381122 404.64 
+Q 256.701122 404.64 256.701122 408.96 
+L 256.701122 418.32 
+Q 256.701122 422.64 252.381122 422.64 
+L 95.04 422.64 
+Q 90.72 422.64 90.72 418.32 
+L 90.72 408.96 
+Q 90.72 404.64 95.04 404.64 
+z
+" style="fill:#53677c;stroke:#53677c;stroke-linejoin:miter;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_12">
+    <path clip-path="url(#p0115503149)" d="M 95.04 437.04 
+L 525.6 437.04 
+Q 529.92 437.04 529.92 441.36 
+L 529.92 450.72 
+Q 529.92 455.04 525.6 455.04 
+L 95.04 455.04 
+Q 90.72 455.04 90.72 450.72 
+L 90.72 441.36 
+Q 90.72 437.04 95.04 437.04 
+z
+" style="fill:#eaf0f7;stroke:#eaf0f7;stroke-linejoin:miter;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_13">
+    <path clip-path="url(#p0115503149)" d="M 95.04 437.04 
+L 328.304702 437.04 
+Q 332.624702 437.04 332.624702 441.36 
+L 332.624702 450.72 
+Q 332.624702 455.04 328.304702 455.04 
+L 95.04 455.04 
+Q 90.72 455.04 90.72 450.72 
+L 90.72 441.36 
+Q 90.72 437.04 95.04 437.04 
+z
+" style="fill:#00756d;stroke:#00756d;stroke-linejoin:miter;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_14">
+    <path clip-path="url(#p0115503149)" d="M 650.16 400.32 
+L 760.32 400.32 
+Q 768.96 400.32 768.96 408.96 
+L 768.96 460.8 
+Q 768.96 469.44 760.32 469.44 
+L 650.16 469.44 
+Q 641.52 469.44 641.52 460.8 
+L 641.52 408.96 
+Q 641.52 400.32 650.16 400.32 
+z
+" style="fill:#e1f4f0;stroke:#e1f4f0;stroke-linejoin:miter;stroke-width:1.2;"/>
+   </g>
+   <g id="text_1">
+    <text style="fill:#112b46;font-family:DejaVu Sans;font-size:27px;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 25.2, 39.235781)" x="25.2" y="39.235781">Two studies. Two distinct endpoints.</text>
+   </g>
+   <g id="text_2">
+    <text style="fill:#53677c;font-family:DejaVu Sans;font-size:15px;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 25.2, 63.237656)" x="25.2" y="63.237656">B1: projection only     M1: Q-Former + projection     /     Three fixed training seeds</text>
+   </g>
+   <g id="text_3">
+    <text style="fill:#00756d;font-family:DejaVu Sans;font-size:13px;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 34.56, 114.997969)" x="34.56" y="114.997969">01  ORIGINAL RETINAL VQA</text>
+   </g>
+   <g id="text_4">
+    <text style="fill:#112b46;font-family:DejaVu Sans;font-size:22px;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 34.56, 144.876563)" x="34.56" y="144.876563">Type-balanced answer accuracy</text>
+   </g>
+   <g id="text_5">
+    <text style="fill:#53677c;font-family:DejaVu Sans;font-size:14px;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 34.56, 166.157812)" x="34.56" y="166.157812">96 original-image groups · 192 questions</text>
+   </g>
+   <g id="text_6">
+    <text style="fill:#53677c;font-family:DejaVu Sans;font-size:18px;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 35.28, 206.637188)" x="35.28" y="206.637188">B1</text>
+   </g>
+   <g id="text_7">
+    <text style="fill:#53677c;font-family:DejaVu Sans;font-size:21px;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 542.16, 207.476719)" x="542.16" y="207.476719">76.04%</text>
+   </g>
+   <g id="text_8">
+    <text style="fill:#00756d;font-family:DejaVu Sans;font-size:18px;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 35.28, 239.037188)" x="35.28" y="239.037188">M1</text>
+   </g>
+   <g id="text_9">
+    <text style="fill:#00756d;font-family:DejaVu Sans;font-size:21px;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 542.16, 239.876719)" x="542.16" y="239.876719">83.33%</text>
+   </g>
+   <g id="text_10">
+    <text style="fill:#00756d;font-family:DejaVu Sans;font-size:22px;font-style:normal;font-weight:bold;text-anchor:middle;" transform="rotate(-0, 704.88, 213.996563)" x="704.88" y="213.996563">+7.29 pp</text>
+   </g>
+   <g id="text_11">
+    <text style="fill:#53677c;font-family:DejaVu Sans;font-size:11px;font-style:normal;font-weight:bold;text-anchor:middle;" transform="rotate(-0, 704.88, 232.278281)" x="704.88" y="232.278281">95% CI</text>
+   </g>
+   <g id="text_12">
+    <text style="fill:#00756d;font-family:DejaVu Sans;font-size:12px;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 704.88, 248.158125)" x="704.88" y="248.158125">[+0.52, +13.89]</text>
+   </g>
+   <g id="text_13">
+    <text style="fill:#53677c;font-family:DejaVu Sans;font-size:10px;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 91.44, 268.238438)" x="91.44" y="268.238438">0</text>
+   </g>
+   <g id="text_14">
+    <text style="fill:#53677c;font-family:DejaVu Sans;font-size:10px;font-style:normal;font-weight:normal;text-anchor:end;" transform="rotate(-0, 529.92, 268.238438)" x="529.92" y="268.238438">100%</text>
+   </g>
+   <g id="text_15">
+    <text style="fill:#00756d;font-family:DejaVu Sans;font-size:13px;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 34.56, 325.957969)" x="34.56" y="325.957969">02  INDEPENDENT LESION STUDY</text>
+   </g>
+   <g id="text_16">
+    <text style="fill:#112b46;font-family:DejaVu Sans;font-size:22px;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 34.56, 355.836563)" x="34.56" y="355.836563">Lesion recognition: binary macro-F1</text>
+   </g>
+   <g id="text_17">
+    <text style="fill:#53677c;font-family:DejaVu Sans;font-size:14px;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 34.56, 377.117813)" x="34.56" y="377.117813">225 images · 4 annotated lesion types</text>
+   </g>
+   <g id="text_18">
+    <text style="fill:#53677c;font-family:DejaVu Sans;font-size:18px;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 35.28, 417.597188)" x="35.28" y="417.597188">B1</text>
+   </g>
+   <g id="text_19">
+    <text style="fill:#53677c;font-family:DejaVu Sans;font-size:21px;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 542.16, 418.436719)" x="542.16" y="418.436719">37.79%</text>
+   </g>
+   <g id="text_20">
+    <text style="fill:#00756d;font-family:DejaVu Sans;font-size:18px;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 35.28, 449.997188)" x="35.28" y="449.997188">M1</text>
+   </g>
+   <g id="text_21">
+    <text style="fill:#00756d;font-family:DejaVu Sans;font-size:21px;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 542.16, 450.836719)" x="542.16" y="450.836719">55.08%</text>
+   </g>
+   <g id="text_22">
+    <text style="fill:#00756d;font-family:DejaVu Sans;font-size:22px;font-style:normal;font-weight:bold;text-anchor:middle;" transform="rotate(-0, 704.88, 424.956563)" x="704.88" y="424.956563">+17.29 pp</text>
+   </g>
+   <g id="text_23">
+    <text style="fill:#53677c;font-family:DejaVu Sans;font-size:11px;font-style:normal;font-weight:bold;text-anchor:middle;" transform="rotate(-0, 704.88, 443.238281)" x="704.88" y="443.238281">95% CI</text>
+   </g>
+   <g id="text_24">
+    <text style="fill:#00756d;font-family:DejaVu Sans;font-size:12px;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 704.88, 459.118125)" x="704.88" y="459.118125">[+13.79, +20.31]</text>
+   </g>
+   <g id="text_25">
+    <text style="fill:#53677c;font-family:DejaVu Sans;font-size:10px;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 91.44, 479.198438)" x="91.44" y="479.198438">0</text>
+   </g>
+   <g id="text_26">
+    <text style="fill:#53677c;font-family:DejaVu Sans;font-size:10px;font-style:normal;font-weight:normal;text-anchor:end;" transform="rotate(-0, 529.92, 479.198438)" x="529.92" y="479.198438">100%</text>
+   </g>
+   <g id="text_27">
+    <text style="fill:#53677c;font-family:DejaVu Sans;font-size:11.3px;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 25.2, 519.786234)" x="25.2" y="519.786234">Paired original-image-group bootstrap · 2,000 resamples · Separate cohorts; scores are not interchangeable</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p0115503149">
+   <rect height="529.92" width="806.4" x="0" y="0"/>
+  </clipPath>
+ </defs>
+</svg>

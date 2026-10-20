@@ -1,0 +1,322 @@
+{
+  "schema_version": "1.0",
+  "release_date": "2026-10-20",
+  "scope": "Selected aggregate closed-answer VQA and reference lesion-presence results; no patient records or per-image predictions.",
+  "numeric_unit": "fraction; multiply by100 for percent; multiply differences by100 for percentage points",
+  "seed_definition": "17,29,43 identify the three existing adaptation training repeats at a fixed split. They are not extra patients. B0 is one deterministic model.",
+  "interval_definition": "Paired original-image-group percentile bootstrap,2000 resamples,95%; the same resampled groups are applied to all fixed seeds before averaging. Intervals condition on the trained models and do not cover all training randomness.",
+  "vqa": {
+    "dataset": "Audited eligible whole-image DME-VQA subset",
+    "metric_id": "type_balanced_original_group_closed_candidate_accuracy",
+    "metric_label": "Type-balanced closed-answer VQA accuracy",
+    "question_types": [
+      "dataset-defined DME proxy grade",
+      "whole-image hard-exudate presence"
+    ],
+    "training_original_groups_full_budget": 304,
+    "validation_original_groups": 77,
+    "n_original_groups": 96,
+    "n_questions": 192,
+    "methods": [
+      {
+        "id": "B0",
+        "label": "Unadapted BLIP-2",
+        "mean": 0.375,
+        "sample_sd": null,
+        "seed_values": [
+          0.375
+        ],
+        "seeds": [
+          null
+        ],
+        "n_original_groups": 96,
+        "n_questions": 192,
+        "source_id": "vqa_independent_analysis",
+        "source_pointers": [
+          "/runs/0/metrics/type_balanced_group_accuracy"
+        ],
+        "crosscheck_source_id": "vqa_report_numbers"
+      },
+      {
+        "id": "B1",
+        "label": "Projection adaptation",
+        "mean": 0.7604166666666666,
+        "sample_sd": 0.00520833333333337,
+        "seed_values": [
+          0.765625,
+          0.7552083333333333,
+          0.7604166666666667
+        ],
+        "seeds": [
+          17,
+          29,
+          43
+        ],
+        "n_original_groups": 96,
+        "n_questions": 192,
+        "source_id": "vqa_independent_analysis",
+        "source_pointers": [
+          "/runs/7/metrics/type_balanced_group_accuracy",
+          "/runs/8/metrics/type_balanced_group_accuracy",
+          "/runs/9/metrics/type_balanced_group_accuracy"
+        ],
+        "crosscheck_source_id": "vqa_report_numbers"
+      },
+      {
+        "id": "simple_vision",
+        "label": "Frozen vision + question classifier",
+        "mean": 0.796875,
+        "sample_sd": 0.0,
+        "seed_values": [
+          0.796875,
+          0.796875,
+          0.796875
+        ],
+        "seeds": [
+          17,
+          29,
+          43
+        ],
+        "n_original_groups": 96,
+        "n_questions": 192,
+        "source_id": "vqa_independent_analysis",
+        "source_pointers": [
+          "/runs/43/metrics/type_balanced_group_accuracy",
+          "/runs/44/metrics/type_balanced_group_accuracy",
+          "/runs/45/metrics/type_balanced_group_accuracy"
+        ],
+        "crosscheck_source_id": "vqa_report_numbers"
+      },
+      {
+        "id": "M1",
+        "label": "Q-Former + projection adaptation",
+        "mean": 0.8333333333333334,
+        "sample_sd": 0.00520833333333337,
+        "seed_values": [
+          0.8333333333333333,
+          0.828125,
+          0.8385416666666667
+        ],
+        "seeds": [
+          17,
+          29,
+          43
+        ],
+        "n_original_groups": 96,
+        "n_questions": 192,
+        "source_id": "vqa_independent_analysis",
+        "source_pointers": [
+          "/runs/16/metrics/type_balanced_group_accuracy",
+          "/runs/17/metrics/type_balanced_group_accuracy",
+          "/runs/18/metrics/type_balanced_group_accuracy"
+        ],
+        "crosscheck_source_id": "vqa_report_numbers"
+      }
+    ],
+    "primary_comparison": {
+      "id": "M1_minus_B1",
+      "difference": 0.07291666666666674,
+      "ci95": [
+        0.00520833333333337,
+        0.13888888888888873
+      ],
+      "n_bootstrap": 2000,
+      "invalid_resamples": 0,
+      "n_original_groups": 96,
+      "fixed_seeds_per_method": 3,
+      "source_id": "vqa_primary_comparisons",
+      "source_pointer": "/M1_minus_B1_clean"
+    },
+    "historical_exposure_disclosure": "I024: an early importer decoded raw test-label records before role filtering. No fitting or model-selection use was found; a strict never-opened historical claim is not made."
+  },
+  "lesion": {
+    "dataset": "DDR official lesion-test images admitted under the extension protocol",
+    "metric_id": "mean_over_four_lesions_binary_macro_f1",
+    "metric_label": "Mean binary macro-F1 over four lesion types",
+    "definition": "For each lesion, average the no-class and yes-class F1; then average EX,HE,MA,SE; finally average the fixed adapter seeds. Not accuracy, not pooled positive-class F1.",
+    "n_original_groups": 225,
+    "n_questions": 900,
+    "development_train_original_groups": 64,
+    "development_validation_original_groups": 32,
+    "methods": [
+      {
+        "id": "B0",
+        "label": "Unadapted BLIP-2",
+        "mean": 0.3518573930270218,
+        "sample_sd": null,
+        "seed_values": [
+          0.3518573930270218
+        ],
+        "seeds": [
+          null
+        ],
+        "n_original_groups": 225,
+        "n_questions": 900,
+        "source_id": "lesion_scores",
+        "source_pointers": [
+          "/models/B0/lesions/mean_binary_macro_F1"
+        ],
+        "crosscheck_source_id": "lesion_scored_rows"
+      },
+      {
+        "id": "B1",
+        "label": "Projection adaptation",
+        "mean": 0.37791694525562886,
+        "sample_sd": 0.03258859820308237,
+        "seed_values": [
+          0.3518573930270218,
+          0.4144561138775094,
+          0.36743732886235536
+        ],
+        "seeds": [
+          17,
+          29,
+          43
+        ],
+        "n_original_groups": 225,
+        "n_questions": 900,
+        "source_id": "lesion_scores",
+        "source_pointers": [
+          "/models/B1_s17/lesions/mean_binary_macro_F1",
+          "/models/B1_s29/lesions/mean_binary_macro_F1",
+          "/models/B1_s43/lesions/mean_binary_macro_F1"
+        ],
+        "crosscheck_source_id": "lesion_scored_rows"
+      },
+      {
+        "id": "M1",
+        "label": "Q-Former + projection adaptation",
+        "mean": 0.55078484031256,
+        "sample_sd": 0.014810126418970643,
+        "seed_values": [
+          0.5494855212397494,
+          0.5366671821505421,
+          0.5662018175473886
+        ],
+        "seeds": [
+          17,
+          29,
+          43
+        ],
+        "n_original_groups": 225,
+        "n_questions": 900,
+        "source_id": "lesion_scores",
+        "source_pointers": [
+          "/models/M1_s17/lesions/mean_binary_macro_F1",
+          "/models/M1_s29/lesions/mean_binary_macro_F1",
+          "/models/M1_s43/lesions/mean_binary_macro_F1"
+        ],
+        "crosscheck_source_id": "lesion_scored_rows"
+      }
+    ],
+    "primary_comparison": {
+      "id": "M1_minus_B1",
+      "difference": 0.17286789505693118,
+      "ci95": [
+        0.13788293677458435,
+        0.2031117729713603
+      ],
+      "n_bootstrap": 2000,
+      "invalid_resamples": 0,
+      "n_original_groups": 225,
+      "fixed_seeds_per_method": 3,
+      "source_id": "lesion_scores",
+      "source_pointer": "/paired_primary_comparisons/mean_binary_macro_F1/M1_minus_B1_mean_adapter_seeds_interval"
+    },
+    "support": {
+      "EX": {
+        "positive_support": 171,
+        "negative_support": 54
+      },
+      "HE": {
+        "positive_support": 194,
+        "negative_support": 31
+      },
+      "MA": {
+        "positive_support": 124,
+        "negative_support": 101
+      },
+      "SE": {
+        "positive_support": 42,
+        "negative_support": 183
+      }
+    },
+    "lesion_names": {
+      "EX": "Hard exudates",
+      "HE": "Hemorrhages",
+      "MA": "Microaneurysms",
+      "SE": "Soft exudates"
+    },
+    "reference_negative_definition": "Existing official all-zero lesion mask; missing mask is unknown, not negative.",
+    "checkpoint_use": "Existing original P1 full-budget adapters; no lesion adapter fine-tuning on DDR confirmation."
+  },
+  "source_artifacts": {
+    "vqa_independent_analysis": {
+      "artifact": "reports/p1_final_authorized_20261012/independent_analysis.json",
+      "sha256": "c48c2c04852f11b04ac026baf0a3393a00e846bce57a967cf163f24f7e7704cb",
+      "included_in_public_repository": false
+    },
+    "vqa_report_numbers": {
+      "artifact": "reports/p1_final_authorized_20261012/mentor_report_numbers.json",
+      "sha256": "112160bd8619ed17289d67e744700ee4772fc7af80227098b4dd1c7320b2cfae",
+      "included_in_public_repository": false
+    },
+    "vqa_primary_comparisons": {
+      "artifact": "reports/p1_final_authorized_20261012/primary_comparisons.json",
+      "sha256": "ac84a25900a2261d67cce7876998e09b368a0c3fdb509e10fd0ee50f30d16b24",
+      "included_in_public_repository": false
+    },
+    "vqa_delivery_review": {
+      "artifact": "reports/p1_final_authorized_20261012/delivery_independent_review.json",
+      "sha256": "278951cc27deda840bbf5adcdedd9d3a77c9a567c5c8ced778c31be43eaa3e0b",
+      "included_in_public_repository": false
+    },
+    "lesion_scores": {
+      "artifact": "extensions/lesion_reasoning_v1/reports/confirmation_scores_v1.json",
+      "sha256": "5a6b63e09ce2dcb0e28e024f307b2602c461a613261f0a242ca5a70c152564a1",
+      "included_in_public_repository": false
+    },
+    "lesion_scored_rows": {
+      "artifact": "extensions/lesion_reasoning_v1/reports/confirmation_scores_v1_lesion_rows.jsonl",
+      "sha256": "d46db39495306b79d8d4e6fe857745745af64cfdb4dc8a38697ed992f5dc4d05",
+      "included_in_public_repository": false
+    },
+    "lesion_numeric_review": {
+      "artifact": "extensions/lesion_reasoning_v1/reports/independent_confirmation_results_review_v1.json",
+      "sha256": "96830d1b28f1a0a39f449786238641a52dd315b14cca9682d25ef13f0bc5e273",
+      "included_in_public_repository": false
+    },
+    "lesion_rows_review": {
+      "artifact": "extensions/lesion_reasoning_v1/reports/independent_confirmation_rows_review_v1.json",
+      "sha256": "6956c9982b2f47cd5609a89523a2a80f102f573982eb6d6bc36194ed3a089646",
+      "included_in_public_repository": false
+    },
+    "lesion_reproduction_review": {
+      "artifact": "extensions/lesion_reasoning_v1/reports/independent_confirmation_reproduction_review_v1.json",
+      "sha256": "9f1b35a06ab63fdf4026386c56d3db0c62122ce69ff5c5715f29cf35a4583f5b",
+      "included_in_public_repository": false
+    },
+    "lesion_raw_reference_review": {
+      "artifact": "extensions/lesion_reasoning_v1/reports/independent_confirmation_raw_reference_review_v1.json",
+      "sha256": "df47700a3121678113629001c08857cbbd3da2f7dd69ab11b3968a2bd771c8f8",
+      "included_in_public_repository": false
+    },
+    "lesion_release_review": {
+      "artifact": "extensions/lesion_reasoning_v1/reports/confirmation_independent_release_review_v1.json",
+      "sha256": "c15b61e5cfc36ed5b474e69ab6ccdcf253ca540da1230061882bbd7e57c7487c",
+      "included_in_public_repository": false
+    },
+    "lesion_license_receipt": {
+      "artifact": "extensions/lesion_reasoning_v1/data_sources/license_and_provenance_receipt.json",
+      "sha256": "fb928af71af31cc0419b99e590259fd6c3dbfcc043f5b59677fc39e61a4b036f",
+      "included_in_public_repository": false
+    }
+  },
+  "claim_boundaries": [
+    "Closed-candidate scoring, not unrestricted clinical text generation.",
+    "Image-level lesion presence, not lesion localization or segmentation.",
+    "An aggregate increase does not establish uniform gains for every lesion or all-lesion correctness.",
+    "No patient-level independence claim: patient identifiers were unavailable.",
+    "This public release does not claim improved clinical reasoning, localization, causal grounding, clinical deployment, SOTA, or label-efficiency superiority."
+  ]
+}
